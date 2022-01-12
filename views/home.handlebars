@@ -1,0 +1,9 @@
+<div class="body">
+    <h1>Produtos</h1>
+    {{#each produtos}}
+        <div class="card">
+            <h4><a href="/produto/{{this.id}}">{{this.nome}}</a></h6>
+            <p>R$ {{this.valor}}</p>
+        </div>
+    {{/each}}
+</div>
